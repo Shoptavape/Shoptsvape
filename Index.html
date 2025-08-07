@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VapoShop - Boutique de cigarettes électroniques et e-liquides en France">
     <title>VapoShop - Boutique de Cigarettes Électroniques</title>
     <style>
         /* CSS Reset et styles de base */
@@ -49,7 +50,7 @@
 
         /* Vérification d'âge */
         #age-verification {
-            display: none; /* Activé via JS */
+            display: none;
             position: fixed;
             top: 0;
             left: 0;
@@ -138,6 +139,15 @@
             margin-top: 2rem;
         }
 
+        footer a {
+            color: #f4a261;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             nav {
@@ -167,7 +177,7 @@
         <nav>
             <div class="logo">VapoShop</div>
             <div>
-                <a href="#home">Accueil</a>
+                <a href="./index.html">Accueil</a>
                 <a href="#products">Produits</a>
                 <a href="#guides">Guides</a>
                 <a href="#contact">Contact</a>
@@ -178,19 +188,19 @@
     <!-- Section produits -->
     <section class="products" id="products">
         <div class="product-card">
-            <img src="https://via.placeholder.com/150" alt="E-cigarette">
+            <img src="assets/images/kit-pod.jpg" alt="E-cigarette">
             <h3>Kit Pod</h3>
             <p>29,90 €</p>
             <button>Ajouter au panier</button>
         </div>
         <div class="product-card">
-            <img src="https://via.placeholder.com/150" alt="E-liquide">
+            <img src="assets/images/e-liquide.jpg" alt="E-liquide">
             <h3>E-liquide Fruité</h3>
             <p>5,90 €</p>
             <button>Ajouter au panier</button>
         </div>
         <div class="product-card">
-            <img src="https://via.placeholder.com/150" alt="Résistance">
+            <img src="assets/images/resistances.jpg" alt="Résistance">
             <h3>Résistances x5</h3>
             <p>12,90 €</p>
             <button>Ajouter au panier</button>
@@ -215,7 +225,7 @@
             if (isAdult) {
                 ageVerification.style.display = 'none';
             } else {
-                window.location.href = 'https://www.google.com'; // Redirection si mineur
+                window.location.href = 'https://www.google.com';
             }
         }
     </script>
